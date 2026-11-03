@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Пирамида из шампанского на свадьбу и праздник — Show Bar</title>
+<meta name="description" content="Пирамида из шампанского с сухим льдом от Show Bar — эффектная церемония на свадьбу, юбилей или корпоратив в Санкт-Петербурге. Профессиональные бармены, красивая подача.">
+<style>
+  :root {
+    --orange: #f26b0a;
+    --orange-dark: #d85e06;
+    --dark: #2e2e2e;
+    --gray: #6b6b6b;
+    --bg: #ffffff;
+    --bg-soft: #faf8f6;
+    --line: #ececec;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--dark);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  .notice {
+    background: #fff4e9;
+    border-bottom: 1px solid #f3dcc0;
+    color: #8a5a1f;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 16px;
+  }
+  .notice a { color: var(--orange-dark); font-weight: 600; text-decoration: none; }
+
+  header.site {
+    display: flex;
+    justify-content: center;
+    padding: 22px 20px 6px;
+  }
+  header.site img { height: 56px; width: auto; }
+
+  .hero {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 20px 50px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 34px;
+    line-height: 1.25;
+    margin: 0 0 14px;
+    color: var(--dark);
+  }
+  .hero h1 span { color: var(--orange); }
+  .hero p.lead {
+    color: var(--gray);
+    font-size: 17px;
+    max-width: 560px;
+    margin: 0 auto 28px;
+    line-height: 1.6;
+  }
+  .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+  a.btn {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  a.btn-primary { background: var(--orange); color: #fff; }
+  a.btn-primary:hover { background: var(--orange-dark); }
+  a.btn-outline { background: transparent; border: 1.5px solid var(--dark); color: var(--dark); }
+
+  section.intro {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+    text-align: center;
+    color: var(--gray);
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
+  section.services {
+    background: var(--bg-soft);
+    padding: 56px 20px;
+  }
+  .services-inner {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+  h2.section-title {
+    text-align: center;
+    font-size: 26px;
+    margin: 0 0 36px;
+  }
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .service-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+  }
+  .service-card img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+  .service-card .body { padding: 20px 22px 24px; }
+  .service-card h3 {
+    margin: 0 0 8px;
+    font-size: 19px;
+    color: var(--orange);
+  }
+  .service-card p {
+    margin: 0;
+    color: var(--gray);
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  @media (max-width: 860px) {
+    .service-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .service-grid { grid-template-columns: 1fr; }
+  }
+
+  section.gallery {
+    padding: 56px 20px;
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .gallery-grid img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  @media (max-width: 560px) {
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  section.contact {
+    background: var(--dark);
+    color: #f1efed;
+    padding: 50px 20px 60px;
+    text-align: center;
+  }
+  section.contact h2 { font-size: 24px; margin: 0 0 10px; }
+  section.contact p.sub { color: #c9c5c1; margin: 0 0 28px; }
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .contact-row a.btn-primary { background: var(--orange); }
+  .contact-row a.btn-outline { border-color: #5a5a5a; color: #f1efed; }
+  .email-line {
+    color: #c9c5c1;
+    font-size: 14px;
+  }
+  .email-line a { color: #f1efed; text-decoration: underline; }
+
+  footer.site {
+    text-align: center;
+    padding: 18px 16px;
+    color: #a7a19a;
+    font-size: 12px;
+    background: var(--dark);
+    border-top: 1px solid #3f3f3f;
+  }
+
+  .messenger-dock {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 50;
+  }
+  .messenger-dock a {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  }
+  .m-wa { background: #25d366; }
+  .m-tg { background: #2aabee; }
+  .m-max { background: linear-gradient(135deg, #7c5cff 0%, #3b6cf5 100%); border-radius: 30% !important; }
+  .messenger-dock svg { width: 26px; height: 26px; }
+</style>
+</head>
+<body>
+
+  <div class="notice">
+    На сайте сейчас технические работы из-за сбоя у хостинг-провайдера, часть функций может работать некорректно.
+    Звоните — мы всегда на связи: <a href="tel:+79095921316">8 909 592-13-16</a>
+  </div>
+
+  <header class="site">
+    <a href="/"><img src="../img/logo.webp" alt="Show Bar — бармен шоу"></a>
+  </header>
+
+  <div class="hero">
+    <h1><span>Пирамида из шампанского</span><br>на свадьбу и праздник</h1>
+    <p class="lead">Эффектная церемония с пирамидой из бокалов, разлитым шампанским и облаком пара от сухого льда — красивый акцент для свадьбы, юбилея или корпоратива в Санкт-Петербурге.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="tel:+79095921316">Позвонить: 8 909 592-13-16</a>
+      <a class="btn btn-outline" href="https://vk.ru/show_bar2">Группа ВКонтакте</a>
+    </div>
+  </div>
+
+  <section class="intro">
+    <p>Пирамида собирается прямо на площадке: несколько ярусов бокалов, шампанское разливается сверху, а снизу — облако пара от сухого льда. Отлично подходит для первого тоста молодожёнов, поздравления юбиляра или эффектного момента на корпоративе.</p>
+  </section>
+
+  <section class="services">
+    <div class="services-inner">
+      <h2 class="section-title">Наши форматы</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <img src="../img/gallery-08.webp" alt="Пирамида шампанского с сухим льдом на свадьбе">
+          <div class="body">
+            <h3>Пирамида шампанского</h3>
+            <p>Эффектная церемония с пирамидой из бокалов, разлитым шампанским и облаком пара от сухого льда. Красивый момент для свадьбы или юбилея.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="../img/gallery-01.webp" alt="Выездной бар на мероприятии">
+          <div class="body">
+            <h3>Выездной бар</h3>
+            <p>Коктейльный бар на любое мероприятие — от камерного дня рождения до крупной свадьбы. Большая барная карта, свежие ингредиенты, профессиональные бармены.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="../img/gallery-03.webp" alt="Бармен-шоу с огнём и жонглированием">
+          <div class="body">
+            <h3>Бармен-шоу</h3>
+            <p>Яркое шоу с флейрингом, жонглированием бутылками и интерактивом с гостями. Запоминающийся акцент для свадьбы, корпоратива или праздника.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2 class="section-title">Фотографии с мероприятий</h2>
+    <div class="gallery-grid">
+      <img src="../img/gallery-02.webp" alt="Выездной бар, розлив коктейлей" loading="lazy">
+      <img src="../img/gallery-04.webp" alt="Жонглирование бутылками" loading="lazy">
+      <img src="../img/gallery-05.webp" alt="Команда барменов на мероприятии" loading="lazy">
+      <img src="../img/gallery-06.webp" alt="Розлив коктейлей гостям" loading="lazy">
+      <img src="../img/gallery-07.webp" alt="Шоу с сухим льдом на мероприятии" loading="lazy">
+      <img src="../img/gallery-09.webp" alt="Бармен-шоу с бенгальскими огнями" loading="lazy">
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Оставить заявку</h2>
+    <p class="sub">Ответим в течение нескольких минут — позвоните или напишите удобным способом</p>
+    <div class="contact-row">
+      <a class="btn btn-primary" href="tel:+79095921316">Позвонить: 8 909 592-13-16</a>
+      <a class="btn btn-outline" href="https://wa.me/79095921316">WhatsApp</a>
+      <a class="btn btn-outline" href="https://t.me/+79095921316">Telegram</a>
+      <a class="btn btn-outline" href="https://vk.ru/show_bar2">ВКонтакте</a>
+    </div>
+    <div class="email-line"><a href="mailto:art-pletnev@mail.ru">art-pletnev@mail.ru</a></div>
+  </section>
+
+  <footer class="site">Show Bar · Выездной бар и бармен-шоу · Санкт-Петербург</footer>
+
+  <div class="messenger-dock">
+    <a class="m-wa" href="https://wa.me/79095921316" aria-label="WhatsApp" title="WhatsApp">
+      <svg viewBox="0 0 32 32" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.004 3C9.096 3 3.5 8.56 3.5 15.42c0 2.36.66 4.57 1.8 6.47L3 29l7.33-2.25a12.98 12.98 0 0 0 5.67 1.3h.004c6.908 0 12.504-5.56 12.504-12.42S22.912 3 16.004 3Zm0 22.56h-.003a10.6 10.6 0 0 1-5.4-1.48l-.388-.23-4.35 1.33 1.36-4.19-.253-.43a10.3 10.3 0 0 1-1.6-5.5c0-5.72 4.69-10.37 10.44-10.37 2.79 0 5.41 1.08 7.38 3.04a10.24 10.24 0 0 1 3.06 7.33c0 5.72-4.69 10.5-10.45 10.5Zm5.73-7.84c-.31-.16-1.86-.91-2.15-1.02-.29-.1-.5-.16-.71.16-.21.31-.81 1.02-1 1.23-.18.21-.37.23-.68.08-.31-.16-1.3-.48-2.48-1.53-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.47.14-.63.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.02-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.53-.71-.54l-.6-.01c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.63s1.13 3.05 1.29 3.26c.16.21 2.23 3.41 5.41 4.78.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.86-.76 2.12-1.5.26-.74.26-1.37.18-1.5-.08-.13-.29-.21-.6-.37Z"/>
+      </svg>
+    </a>
+    <a class="m-tg" href="https://t.me/+79095921316" aria-label="Telegram" title="Telegram">
+      <svg viewBox="0 0 32 32" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M28.5 5.4 24.4 26.8c-.31 1.37-1.12 1.71-2.27 1.07l-6.27-4.62-3.03 2.92c-.34.34-.62.62-1.26.62l.45-6.4L23.9 9.3c.5-.45-.11-.7-.78-.25L9.56 17.6l-6.2-1.94c-1.35-.42-1.37-1.35.28-2L26.8 4.6c1.12-.42 2.1.27 1.7 1.8Z"/>
+      </svg>
+    </a>
+    <a class="m-max" href="https://max.ru/" aria-label="MAX" title="MAX">
+      <img src="../img/max-icon.webp" alt="MAX" style="width:100%;height:100%;border-radius:inherit;">
+    </a>
+  </div>
+</body>
+</html>
