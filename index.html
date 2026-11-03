@@ -205,7 +205,7 @@
   }
   .m-wa { background: #25d366; }
   .m-tg { background: #2aabee; }
-  .m-max { background: #ef5b28; }
+  .m-max { background: linear-gradient(135deg, #7c5cff 0%, #3b6cf5 100%); }
   .messenger-dock svg { width: 26px; height: 26px; }
 </style>
 </head>
@@ -296,9 +296,16 @@
       </svg>
     </a>
     <a class="m-max" href="https://max.ru/" aria-label="MAX" title="MAX">
-      <svg viewBox="0 0 32 32" fill="white" xmlns="http://www.w3.org/2000/svg">
-        <path d="M6 7a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H13l-5.5 5v-5H9a3 3 0 0 1-3-3V7Z"/>
-        <text x="16" y="16.8" font-family="-apple-system, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#ef5b28" text-anchor="middle">M</text>
+      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="maxBg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#7c5cff"/>
+            <stop offset="100%" stop-color="#3b6cf5"/>
+          </linearGradient>
+        </defs>
+        <circle cx="16.5" cy="14.5" r="9.5" fill="white"/>
+        <circle cx="17" cy="13.3" r="4.3" fill="url(#maxBg)"/>
+        <path d="M8.8 18.5c1 2.6 3 3.3 3 3.3l-1.3 4.6-4.3-3.8 2.6-4.1Z" fill="white"/>
       </svg>
     </a>
   </div>
