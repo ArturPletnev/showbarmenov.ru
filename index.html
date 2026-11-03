@@ -96,7 +96,7 @@
   }
   .service-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
   .service-card {
@@ -122,7 +122,10 @@
     font-size: 15px;
     line-height: 1.55;
   }
-  @media (max-width: 680px) {
+  @media (max-width: 860px) {
+    .service-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
     .service-grid { grid-template-columns: 1fr; }
   }
 
@@ -243,6 +246,13 @@
             <p>Яркое шоу с флейрингом, жонглированием бутылками и интерактивом с гостями. Запоминающийся акцент для свадьбы, корпоратива или праздника.</p>
           </div>
         </div>
+        <div class="service-card">
+          <img src="img/gallery-08.webp" alt="Пирамида шампанского с сухим льдом на свадьбе">
+          <div class="body">
+            <h3>Пирамида шампанского</h3>
+            <p>Эффектная церемония с пирамидой из бокалов, разлитым шампанским и облаком пара от сухого льда. Красивый момент для свадьбы или юбилея.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -255,7 +265,6 @@
       <img src="img/gallery-05.webp" alt="Команда барменов на мероприятии" loading="lazy">
       <img src="img/gallery-06.webp" alt="Розлив коктейлей гостям" loading="lazy">
       <img src="img/gallery-07.webp" alt="Шоу с сухим льдом на мероприятии" loading="lazy">
-      <img src="img/gallery-08.webp" alt="Пирамида шампанского с сухим льдом на свадьбе" loading="lazy">
       <img src="img/gallery-09.webp" alt="Бармен-шоу с бенгальскими огнями" loading="lazy">
     </div>
   </section>
