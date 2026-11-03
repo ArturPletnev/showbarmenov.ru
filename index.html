@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Show Bar — технические работы на сайте</title>
+<meta name="description" content="Показ-бар / выездной бар Show Bar. Сайт временно на техработах из-за сбоя хостинга — звоните, пишите, мы на связи.">
+<style>
+  :root {
+    --bg: #0d0d0f;
+    --card: #17171a;
+    --card-2: #1f1f23;
+    --text: #f2ede6;
+    --muted: #a7a19a;
+    --accent: #d4a13c;
+    --wa: #25d366;
+    --tg: #2aabee;
+    --max: #ef5b28;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 32px 20px 120px;
+  }
+  .brand {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 24px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid #2a2a2e;
+    border-radius: 16px;
+    padding: 36px 28px;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-size: 24px;
+    margin: 0 0 14px;
+    color: var(--accent);
+    line-height: 1.3;
+  }
+  p {
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0 0 20px;
+    font-size: 16px;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  a.btn {
+    display: block;
+    padding: 14px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  a.btn-primary {
+    background: var(--accent);
+    color: #1a1304;
+  }
+  a.btn-secondary {
+    background: transparent;
+    border: 1px solid #3a3a3e;
+    color: var(--text);
+  }
+  .email {
+    display: inline-block;
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 1px dashed #4a4a4e;
+  }
+  h2 {
+    font-size: 18px;
+    color: var(--text);
+    text-align: center;
+    margin: 0 0 18px;
+    font-weight: 600;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .gallery img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    background: var(--card-2);
+  }
+  @media (max-width: 560px) {
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+  }
+  .note {
+    margin-top: 28px;
+    font-size: 13px;
+    color: #6d6963;
+    text-align: center;
+  }
+
+  /* floating messenger widgets */
+  .messenger-dock {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 50;
+  }
+  .messenger-dock a {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+  }
+  .m-wa { background: var(--wa); }
+  .m-tg { background: var(--tg); }
+  .m-max { background: var(--max); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">Show Bar · Выездной бар и бармен-шоу</div>
+
+    <div class="card">
+      <h1>На хостинге Beget.ru произошёл технический сбой</h1>
+      <p>Часть функций сайта пока недоступна — мы уже знаем и ждём восстановления. А пока мы всё так же работаем и принимаем заявки:</p>
+      <div class="contacts">
+        <a class="btn btn-primary" href="tel:+79095921316">Позвонить: 8 909 592-13-16</a>
+        <a class="btn btn-secondary" href="https://wa.me/79095921316">Написать в WhatsApp</a>
+        <a class="btn btn-secondary" href="https://t.me/+79095921316">Написать в Telegram</a>
+      </div>
+      <a class="email" href="mailto:art-pletnev@mail.ru">art-pletnev@mail.ru</a>
+    </div>
+
+    <h2>Наши выездные бары и бармен-шоу</h2>
+    <div class="gallery">
+      <img src="img/gallery-01.webp" alt="Бармен готовит коктейль шейкером" loading="lazy">
+      <img src="img/gallery-02.webp" alt="Выездной бар на мероприятии" loading="lazy">
+      <img src="img/gallery-03.webp" alt="Бармен-шоу с жонглированием бутылками и огнём" loading="lazy">
+      <img src="img/gallery-04.webp" alt="Жонглирование бутылками под потолком зала" loading="lazy">
+      <img src="img/gallery-05.webp" alt="Команда барменов на мероприятии" loading="lazy">
+      <img src="img/gallery-06.webp" alt="Розлив коктейлей гостям" loading="lazy">
+      <img src="img/gallery-07.webp" alt="Фонтан из шампанского с сухим льдом" loading="lazy">
+      <img src="img/gallery-08.webp" alt="Бармен-шоу с бенгальскими огнями" loading="lazy">
+      <img src="img/gallery-09.webp" alt="Бармен-шоу на мероприятии" loading="lazy">
+    </div>
+
+    <p class="note">Страница временная, сайт скоро вернётся в обычном режиме.</p>
+  </div>
+
+  <div class="messenger-dock">
+    <a class="m-wa" href="https://wa.me/79095921316" aria-label="WhatsApp" title="WhatsApp">WA</a>
+    <a class="m-tg" href="https://t.me/+79095921316" aria-label="Telegram" title="Telegram">TG</a>
+    <a class="m-max" href="https://max.ru/" aria-label="MAX" title="MAX">MAX</a>
+  </div>
+</body>
+</html>
